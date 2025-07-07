@@ -11,6 +11,7 @@ function Home() {
           <a href="#">Presentes</a>
           <a href="#">História</a>
           <a href="#">Carrinho</a>
+          <a href="#">Acesso</a>
         </nav>
       </div>
 
@@ -19,6 +20,10 @@ function Home() {
           src="https://preview.redd.it/arrakis-dune-3840x2160-v0-wkhm32mcxuad1.jpeg?auto=webp&s=b6f2e93490177e3ab9457f6cba35a1282f51d874"
         />
       </section>
+
+      <div className="mais-vendidos">
+        <h1>Mais vendidos</h1>
+      </div>
 
       <div className="livros">
         <div className="card">
@@ -89,7 +94,10 @@ function Home() {
             alt="Box de Trono de Vidro da Sarah J. Maas"
           />
           <h2>Box Trono de Vidro</h2>
-          <p className="preco">R$ 389,00</p>
+          <h4>Sarah J. Maas</h4>
+          <p>
+            <u>R$ 389,00</u>
+          </p>
         </div>
 
         <div className="card-pessoa">
@@ -102,7 +110,7 @@ function Home() {
       </div>
 
       <div className="rodape">
-        <footer>&copy; Victória de Almeida Silva - 2025</footer>
+        <footer>&copy; 44Books - Victória de Almeida Silva - 2025</footer>
       </div>
     </>
   )

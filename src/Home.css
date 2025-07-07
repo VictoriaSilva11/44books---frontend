@@ -13,7 +13,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     background: var(--cor-fundo);
@@ -57,22 +58,27 @@ html, body {
     opacity: 0.6;
 }
 
-
-/* Video */
+/* Imagem destaque */
 .imagem-section {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .imagem-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* Sessão das coleções */
+.mais-vendidos {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* Sessão dos livros */
 .livros {
     display: flex;
     justify-content: center;
