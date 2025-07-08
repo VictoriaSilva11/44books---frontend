@@ -1,23 +1,16 @@
-import './home.css'
+import './Home.css';
+import Header from './Header.tsx';
+import Footer from './Footer.tsx'
+
 
 function Home() {
   return (
     <>
-      <div className="cabecalho">
-        <div className="logo">44Books</div>
-        <nav className="menu">
-          <a href="#">Home</a>
-          <a href="#">Livros</a>
-          <a href="#">Presentes</a>
-          <a href="#">História</a>
-          <a href="#">Carrinho</a>
-          <a href="#">Acesso</a>
-        </nav>
-      </div>
+    <Header />
 
       <section className="imagem-section">
         <img
-          src="https://preview.redd.it/arrakis-dune-3840x2160-v0-wkhm32mcxuad1.jpeg?auto=webp&s=b6f2e93490177e3ab9457f6cba35a1282f51d874"
+          src="https://www.iamag.co/wp-content/uploads/2023/01/kieran-belshaw-dragonpitentrance-frontview-v002-scaled.jpg"
         />
       </section>
 
@@ -108,10 +101,7 @@ function Home() {
           />
         </div>
       </div>
-
-      <div className="rodape">
-        <footer>&copy; 44Books - Victória de Almeida Silva - 2025</footer>
-      </div>
+      <Footer />
     </>
   )
 }
