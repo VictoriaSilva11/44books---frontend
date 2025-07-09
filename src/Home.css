@@ -108,24 +108,20 @@ body {
     margin-bottom: 30px;
 }
 
-.card-joia h2 {
+.card-livro h2 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.card-joia p {
+.card-livro p {
     margin: 5px 0;
     font-size: 16px;
 }
 
-.preco {
-    font-weight: 500;
-    margin-top: 10px;
-}
-
 .card-pessoa {
     width: 50vw;
+    height: 70vh;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;

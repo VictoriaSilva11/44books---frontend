@@ -12,7 +12,7 @@ export default function Header() {
                 <a><Link to="/Presentes">Presentes</Link></a>
                 <a><Link to="/Historia">História</Link></a>
                 <a><Link to="/Carrinho">Carrinho</Link></a>
-                <a><Link to="/Acesso">Acesso</Link></a>
+                <a><Link to="/Admin">Admin</Link></a>
             </nav>
         </header>
     );

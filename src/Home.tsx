@@ -96,7 +96,7 @@ function Home() {
         <div className="card-pessoa">
           <img
             className="modelo-img"
-            src="https://indicandolivros.com.br/wp-content/uploads/2022/08/Sarah-J-Maas.jpeg"
+            src="https://acotarbrasil.com.br/wp-content/uploads/2024/02/sarah-j-maas-proximo-livro.jpg"
             alt="Imagem da Sarah J. Maas, autora de Trono de Vidro, Acotar e outros best sellers"
           />
         </div>

@@ -1,4 +1,28 @@
 /* Imagem destaque */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
+
+:root {
+    --fonte-principal: 'EB Garamond', serif;
+    --cor-texto: #111111cf;
+    --cor-fundo: white;
+    --cor-destaque: #f3efe9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+}
+
 .imagem-section {
     width: 100vw;
     height: 100vh;
@@ -10,4 +34,93 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.formulario-admin {
+  padding: 40px;
+  background-color: #f9f8f6;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.formulario-admin h2 {
+  margin-bottom: 20px;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+.formulario-admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-admin label {
+  font-weight: bold;
+}
+
+.formulario-admin input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.formulario-admin button {
+  background-color: #2d7f5e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-admin button:hover {
+  background-color: #256d50;
+}
+
+.erro {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tabela-admin {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tabela-admin table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.tabela-admin th,
+.tabela-admin td {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabela-admin th {
+  background-color: #f3efe9;
+}
+
+.tabela-admin button {
+  margin-right: 6px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #2d7f5e;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabela-admin button:hover {
+  background-color: #256d50;
 }

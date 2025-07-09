@@ -53,7 +53,7 @@ function Livros() {
             src="https://m.media-amazon.com/images/I/91G2hnAVQgL._UF1000,1000_QL80_.jpg"
           />
           <h3>Alchemised</h3>
-          <h4>SenLynYu</h4>
+          <h4>SenLinYu</h4>
           <p>
             <u>R$ 97,00</u>
           </p>
