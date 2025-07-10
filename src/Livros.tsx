@@ -3,11 +3,10 @@ import Header from './Header.tsx'
 import Footer from './Footer.tsx'
 import './Livros.css'
 
-
 function Livros() {
   return (
     <>
-    <Header />
+      <Header />
       <section className="imagem-section">
         <img
           src="https://preview.redd.it/i-made-a-stormlight-arc-1-4k-wallpaper-by-combining-all-the-v0-gmanmn7emisd1.png?auto=webp&s=3fdf7e3fc4b41ab549d556705a1ba9dd057b5ebb"
@@ -53,7 +52,7 @@ function Livros() {
             src="https://m.media-amazon.com/images/I/91G2hnAVQgL._UF1000,1000_QL80_.jpg"
           />
           <h3>Alchemised</h3>
-          <h4>SenLynYu</h4>
+          <h4>SenLinYu</h4>
           <p>
             <u>R$ 97,00</u>
           </p>
@@ -511,6 +510,7 @@ function Livros() {
         </div>
 
       </div>
+      
       <Footer />
     </>
   )
