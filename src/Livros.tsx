@@ -10,7 +10,7 @@ type livro = {
   genero: string;
   ano_publicacao: number;
   preco: string;
-  img: string;
+  imagemUrl: string;
 };
 
 function Livros() {
@@ -58,7 +58,7 @@ function Livros() {
       <div className="livros">
         {livros.map((livro) => (
           <div className="card" key={livro.id}>
-            <img src={livro.img} alt={`Capa do livro ${livro.titulo}`} />
+            <img src={livro.imagemUrl} alt={`Capa do livro ${livro.titulo}`} />
             <h3>{livro.titulo}</h3>
             <h4>Autor: {livro.autor}</h4>
             <h4>Genero: {livro.genero}</h4>
@@ -71,6 +71,6 @@ function Livros() {
       <Footer />
     </>
   );
-}
+} 
 
 export default Livros;
