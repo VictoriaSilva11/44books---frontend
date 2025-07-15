@@ -1,54 +1,126 @@
-# React + TypeScript + Vite
+# 📚 44Books
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto **44Books**, desenvolvido com **React**, **Fastify** e **MySQL**. O sistema permite o cadastro, visualização, edição e exclusão de livros e autores.
 
-Currently, two official plugins are available:
+##  Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- **React** com TypeScript
+- **React Router Dom** para navegação
+- CSS puro com design responsivo
 
-## Expanding the ESLint configuration
+### Backend
+- **Fastify** (servidor HTTP)
+- **MySQL** (banco de dados relacional)
+- **mysql2** para comunicação com o banco de dados
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##  Estrutura de Pastas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+44books/
+├── public/
+├── src/
+│   ├── Admin.tsx         
+│   ├── Home.tsx          
+│   ├── Livros.tsx        
+│   ├── Header.tsx        
+│   ├── Footer.tsx        
+│   ├── main.tsx          
+│   ├── App.css           
+│   ├── Admin.css         
+│   ├── Home.css          
+│   ├── Livros.css        
+│   ├── Header.css        
+│   └── Footer.css        
+├── index.html            
+├── vite.config.ts        
+├── tsconfig.json         
+├── package.json          
+└── README.md             
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+###  Admin (`/Admin`)
+- Cadastrar, editar e excluir **autores**
+- Cadastrar, editar e excluir **livros**
+- Exclusão de autor remove seus livros
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+###  Home (`/Home`)
+- Banner em tela cheia
+- Exibição dos autores cadastrados
+
+###  Livros (`/Livros`)
+- Banner em tela cheia
+- Lista de livros com capa, título, autor, gênero e preço
+
+## ⚙ Instruções de Uso
+
+### Requisitos
+- Node.js
+- MySQL
+- Vite
+
+### Instalação
+
+1. Clone o projeto ou faça donwload:
+```bash
+git clone https://github.com/seu-usuario/44books.git
+cd 44books
 ```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Configure o banco de dados:
+```sql
+CREATE DATABASE books44;
+
+USE books44;
+
+CREATE TABLE autores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100),
+  nacionalidade VARCHAR(100),
+  img TEXT
+);
+
+CREATE TABLE livros (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(100),
+  preco DECIMAL(10, 2),
+  genero VARCHAR(50),
+  ano_publicacao INT,
+  img TEXT,
+  autor_id INT,
+  FOREIGN KEY (autor_id) REFERENCES autores(id) ON DELETE CASCADE
+);
+```
+
+4. Inicie o backend Fastify:
+```bash
+npm run dev
+```
+
+5. Inicie o frontend:
+```bash
+npm run dev
+```
+
+##  Rotas da API
+
+- `GET /autores`
+- `POST /autores`
+- `PUT /autores/:id`
+- `DELETE /autores/:id`
+
+- `GET /livros`
+- `POST /livros`
+- `PUT /livros/:id`
+- `DELETE /livros/:id`
+
+##  Desenvolvedora
+
+**Victória de Almeida Silva**  
