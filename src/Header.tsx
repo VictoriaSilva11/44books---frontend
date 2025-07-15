@@ -8,6 +8,7 @@ export default function Header() {
                 <Link to="/">44Books</Link>
             </div>
             <nav className="menu">
+                <a><link to="/Home">Home</link></a>
                 <a><Link to="/Livros">Livros</Link></a>
                 <a><Link to="/Admin">Admin</Link></a>
             </nav>
