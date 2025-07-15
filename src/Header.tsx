@@ -9,7 +9,6 @@ export default function Header() {
             </div>
             <nav className="menu">
                 <a><Link to="/Livros">Livros</Link></a>
-                <a><Link to="/Historia">História</Link></a>
                 <a><Link to="/Admin">Admin</Link></a>
             </nav>
         </header>
