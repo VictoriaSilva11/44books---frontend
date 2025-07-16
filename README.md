@@ -74,6 +74,10 @@ cd 44books
 npm install
 ```
 
+## Diagrama do banco de dados
+
+![Diagrama ER](diagrama44books.png)
+
 3. Configure o banco de dados:
 ```sql
 CREATE DATABASE books44;
